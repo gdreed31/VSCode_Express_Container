@@ -8,7 +8,7 @@ RUN apk update && \
 RUN curl https://raw.githubusercontent.com/git/git/v2.20.1/contrib/completion/git-completion.bash -o ~/.git-completion.bash && \
     echo "[ -f ~/.git-completion.bash ] && . ~/.git-completion.bash" >> ~/.bashrc
 
-# Setup create-react-app script to run in .devcontainer postCreateCommand
+# Setup init.sh script to run in .devcontainer postCreateCommand
 RUN mkdir /.initScripts
 COPY init.sh /.initScripts/
 RUN chmod o+x /.initScripts/init.sh

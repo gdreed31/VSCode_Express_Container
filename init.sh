@@ -16,6 +16,7 @@ then
     npm init -y
     npm i express
     npm i mongoose
+    npm i cors
     npm i --save-dev dotenv
     npm i --save-dev nodemon
     npm audit fix
